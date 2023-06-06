@@ -1,0 +1,63 @@
+.container {
+    max-width: 800px;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    margin: 0 auto;
+    align-items: center; 
+    display: "flex",
+   
+}
+
+.result {
+    font-size: 2rem;
+    text-align:center; 
+}
+
+.word {
+    display:flex;
+    gap:.25em;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+
+}
+
+.keyboard {
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap:.5rem;
+    
+}
+
+.display-keys{
+    align-self: stretch; 
+}
+
+.btn{
+    width:100%;
+    border: 3px solid black;
+    background: none;
+    aspect-ratio:1/1;
+    font-size:2.5rem;
+    text-transform:uppercase;
+    padding:.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color:black; 
+}
+
+.active {
+    background-color:blue !important;
+    color: white;
+}
+.inactive {
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled), btn:focus:not(:disabled), btn:active{
+    background-color:blue !important;
+    color: white;
+    }
